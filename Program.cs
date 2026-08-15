@@ -230,7 +230,7 @@ namespace SA_Pulse
                 IndicatorName = indicatorName;
                 CurrentNumberOfIncidents = currentNumberOfIncidents;
                 PreviousNumberOfIncidents = previousNumberOfIncidents;
-                change= GetChange();
+                change = GetChange();
             }
         }
         abstract class Incident // so i made this class abstract to make sure that no one can create an object of this class, but only create instances of the the child classes
@@ -374,12 +374,12 @@ namespace SA_Pulse
         }
 
         class WasteIncident : Incident
-        { 
-              public WasteIncident(int incidentID, string description, int communityID, DateTime date, int impact)
-                {
-                 IncidentID = incidentID;
-                 Description = description;
-                 CommunityID = communityID;
+        {
+            public WasteIncident(int incidentID, string description, int communityID, DateTime date, int impact)
+            {
+                IncidentID = incidentID;
+                Description = description;
+                CommunityID = communityID;
                 Date = date;
                 Impact = impact;
             }
@@ -406,7 +406,7 @@ namespace SA_Pulse
         }
 
         class InfrastructureIncident : Incident
-        { 
+        {
             public InfrastructureIncident(int incidentID, string description, int communityID, DateTime date, int impact)
             {
                 IncidentID = incidentID;
@@ -429,5 +429,5 @@ namespace SA_Pulse
                 return random.Next(minimum, maximum + 1);
             }
         }
-    }
+    } 
 }
