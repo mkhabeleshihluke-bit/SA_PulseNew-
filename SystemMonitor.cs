@@ -28,7 +28,7 @@ namespace SA_Pulse
             {
                 // Run a system check every 3 seconds
                 Thread.Sleep(3000);
-                Console.WriteLine($"\n[System Check] Status: OK | Time: {DateTime.Now:HH:mm:ss}");
+                Console.WriteLine($"[System Check] Status: OK | Time: {DateTime.Now:HH:mm:ss}");
             }
         }
     }
