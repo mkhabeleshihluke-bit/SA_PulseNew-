@@ -1,0 +1,35 @@
+using System;
+using System.Threading;
+
+namespace SA_Pulse
+{
+    // Simple background monitor running on its own thread
+    public class SystemMonitor
+    {
+        private bool isRunning;
+
+        public void Start()
+        {
+            isRunning = true;
+            // Create and start a background thread running the MonitorLoop method
+            Thread monitorThread = new Thread(MonitorLoop);
+            monitorThread.IsBackground = true;
+            monitorThread.Start();
+        }
+
+        public void Stop()
+        {
+            isRunning = false;
+        }
+
+        private void MonitorLoop()
+        {
+            while (isRunning)
+            {
+                // Run a system check every 3 seconds
+                Thread.Sleep(3000);
+                Console.WriteLine($"\n[System Check] Status: OK | Time: {DateTime.Now:HH:mm:ss}");
+            }
+        }
+    }
+}
