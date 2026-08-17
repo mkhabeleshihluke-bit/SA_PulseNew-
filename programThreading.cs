@@ -21,7 +21,7 @@ namespace SA_Pulse
 
             while (keepRunning)
             {
-                Console.WriteLine("\nMenu: 1 = Add Water Incident | 2 = Exit");
+                Console.WriteLine("Menu: 1 = Add Water Incident | 2 = Exit");
                 Console.Write("Choice: ");
                 string choice = Console.ReadLine();
 
