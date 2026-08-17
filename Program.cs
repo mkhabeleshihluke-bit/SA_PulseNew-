@@ -9,7 +9,8 @@ namespace SA_Pulse
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
+            //CLASSES TEST
             Community community = new Community("Ubuntu-01", 1, 50000, "High", "Moderate", 45);
 
 
@@ -72,7 +73,7 @@ namespace SA_Pulse
     };
 
 
-
+ 
                 // TEST 1 - CROSS-SIGNAL ANOMALY
                 // *****************************************************
 
