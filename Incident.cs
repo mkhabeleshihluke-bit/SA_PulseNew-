@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SA_Pulse
 {
-    abstract class Incident // so i made this class abstract to make sure that no one can create an object of this class, but only create instances of the the child classes
+    public abstract class Incident // Base type for all recorded incidents.
     {
         private int incidentID;
         private string description;
